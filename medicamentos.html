@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Recordatorio de Medicamentos</title>
+</head>
+
+
+<body class="bg-green">
+
+<!-- HEADER -->
+<header class=" bg-blue-700   p-4 flex justify-between items-center font-semibold">
+  <h1 class="text-2xl font-bold">SaludApp</h1>
+  <nav class="space-x-4 text-lg text-white">
+    <a href="#" class="hover:bg-black" >Inicio</a>
+    <a href="#" class="hover:bg-black"  >Medicamentos</a>
+    <a href="#" class="hover:bg-black">Historial</a>
+    <a href="#" class="hover:bg-black" >Perfil</a>
+  </nav>
+</header>
+
+<!--letras de arriba-->
+<section class="p-6 text-center font-bold">
+  <h2 class="text-black text-3xl font-bold mb-4">Recuerda tus medicamentos fácilmente</h2>
+  <img src="elderly-man-clasping-pill-one-600nw-2359958693.webp" 
+       class="mx-auto rounded-xl w-72">
+</section>
+
+<!--que medicamentos quiere el cliente-->
+<section class="p-6">
+  <h2 class="text-black text-2xl font-bold mb-4">Medicamentos de hoy</h2>
+
+  <div class="bg-white p-4 rounded-xl border border-gray-300 drop-shadow-2xl mb-4">
+    <p class="text-xl font-semibold">Paracetamol</p>
+    <p>Dosis: 1 pastilla</p>
+    <p>Hora: 8:00 AM</p>
+
+    <button onclick="confirmar()" 
+      class="mt-4 bg-blue-700 text-white py-3 px-6 rounded-xl text-lg">
+      Ya tomé mi medicamento
+    </button>
+  </div>
+</section>
+
+<!--aca se agregan medicamneto-->
+<section class="p-6">
+  <h2 class="text-black text-2xl  mb-4 font-bold">Agregar medicamento</h2>
+
+  <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-300">
+    <input type="text" placeholder="Nombre"
+      class="border-gray-300 w-full p-3 mb-3 border rounded-lg text-lg">
+
+    <input type="text" placeholder="Dosis"
+      class="border-gray-300 w-full p-3 mb-3 border rounded-lg text-lg">
+
+    <input type="time"
+      class="border-gray-300 w-full p-3 mb-3 border rounded-lg text-lg font-semibold">
+
+    <button class="bg-blue-700 text-white py-3 px-6 rounded-xl text-lg">
+      Guardar
+    </button>
+  </div>
+  </section>
+  
+  <!--historial-->
+ 
+<section class="p-6">
+  <h2 class="text-black text-2xl font-bold mb-4 ">Historial</h2>
+
+  <table class="w-full bg-white rounded-xl drop-shadow-2xl border  border-gray-300">
+    <thead class="border border-gray-200 drop-shadow-2xl bg-blue-700 text-white text-lg font-semibold">
+      <tr class=" drop-shadow-2xl border border-gray-300">
+        <th class="p-3">Medicamento</th>
+        <th class="p-3">Fecha</th>
+        <th class="p-3">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class=" drop-shadow-2xl border border-gray-300 text-center text-lg font-semibold">
+        <td class="p-3">Paracetamol</td>
+        <td>Hoy</td>
+        <td class="text-green-800">Tomado</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+ 
+</body>
+   <footer class="bg-blue-700 text-white  bg-neutral   p-10  flex items-center justify-around">
+  <nav>
+    <h6 class="footer-title">Services</h6>
+    <a class="link link-hover">Branding</a>
+    <a class="link link-hover">Design</a>
+    <a class="link link-hover">Marketing</a>
+    <a class="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Company</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+
+</footer>
+</html>
